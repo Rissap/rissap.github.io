@@ -2,8 +2,234 @@
 <html>
 <head>
 	<title>Homepage</title>
+	<link rel="stylesheet" href="index.css">
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap" rel="stylesheet">
 </head>
+
 <body>
-	<h1>Welcome to the portfolio site</h1>
+	<div class="header" id="header">
+		<div class="header__logo">
+			<h2 class="header__name">Daniil Istomin</h2>
+		</div>
+		<div class="header_navigation">
+			<div class="header__item">
+				<a href="#about" class="header__link">About</a>
+			</div>
+			<div class="header__item">
+				<a href="#stack" class="header__link">Tech Skills</a>
+			</div>
+			<div class="header__item">
+				<a href="#projects" class="header__link">Projects</a>
+			</div>
+			<div class="header__item">
+				<a href="#contacts" class="header__link">Contacts</a>
+			</div>
+			<div class="header__item">
+				<a href="https://github.com/Rissap/" class="header__link">Git</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="about" id="about">
+		<div class="about__header">
+			<h1 class="about__text">
+				Back-end
+				<br>
+				Front-end
+				<br> 
+				<span class="about__text-break about__text-break_wide">developer</span>
+			</h1>
+		</div>
+		<div class="about__media">
+			<img class="about__image" src="index/img/02.png">
+		</div>
+	</div>
+
+	<div class="tech" id="stack">
+		<h2 class="tech__header">Tech skills</h2>
+		<div class="stack">
+			<div class="stack__wrapper">
+				<p class="stack__title stack__title_random">HTML5</p>
+				<p class="stack__text stack__text-hover"></p>
+			</div>
+
+			<div class="stack__title-wrapper">
+				<p class="stack__title stack__title_random">CSS3</p>
+				<p class="stack__text stack__text-hover"></p>
+			</div>
+
+			<div class="stack__title-wrapper">
+				<p class="stack__title stack__title_random">JavaScript</p>
+				<p class="stack__text stack__text-hover"></p>
+			</div>
+
+			<div class="stack__title-wrapper">
+				<p class="stack__title stack__title_random">jQuery</p>
+				<p class="stack__text stack__text-hover"></p>
+			</div>
+
+			<div class="stack__title-wrapper">
+				<p class="stack__title stack__title_random">Python</p>
+				<p class="stack__text stack__text-hover"></p>
+			</div>
+
+			<div class="stack__title-wrapper">
+				<p class="stack__title stack__title_random">Django</p>
+				<p class="stack__text stack__text-hover"></p>
+			</div>
+
+			<div class="stack__title-wrapper">
+				<p class="stack__title stack__title_random">DjangoRest</p>
+				<p class="stack__text stack__text-hover"></p>
+			</div>
+
+			<div class="stack__title-wrapper">
+				<p class="stack__title stack__title_random">MySQL</p>
+				<p class="stack__text stack__text-hover"></p>
+			</div>
+
+			<div class="stack__title-wrapper">
+				<p class="stack__title stack__title_random">PostgreSQL</p>
+				<p class="stack__text stack__text-hover"></p>
+			</div>
+		</div>	
+		
+		<h2 class="tech__header">Dev skills</h2>
+		<div class="dev">
+			<div class="dev__wrapper">
+				<div class="dev__element">
+					<img src="index/img/" alt="" class="dev__image">
+					<h3 class="dev__title">BEM methodology</h3>
+					<p class="dev__text">BEM methodology helps to make changes to any website quickly and easily by any front-end developer.</p>
+				</div>
+
+				<div class="dev__element">
+					<img src="index/img/" alt="" class="dev__image">
+					<h3 class="dev__title">PixelPerfect</h3>
+					<p class="dev__text">From scratch to a beautiful web page. Pixel to pixel.</p>
+				</div>				
+
+				<div class="dev__element">
+					<img src="index/img/" alt="" class="dev__image">
+					<h3 class="dev__title">Agile/Scrum</h3>
+					<p class="dev__text">Fast development, flexible to any changes. 24/7 customer support. Priority to the most important features of the product.</p>
+				</div>
+
+				<div class="dev__element">
+					<img src="index/img/" alt="" class="dev__image">
+					<h3 class="dev__title">REST API</h3>
+					<p class="dev__text">Need some additional functionality without any changes on your server? Try out REST API!</p>
+				</div>
+
+				<div class="dev__element">
+					<img src="index/img/" alt="" class="dev__image">
+					<h3 class="dev__title">Back-end</h3>
+					<p class="dev__text">Blog or weather forecast site? The powerful Django framework handles any of your requirements.</p>
+				</div>
+				
+				<div class="dev__element">
+					<img src="index/img/" alt="" class="dev__image">
+					<h3 class="dev__title">Support and update</h3>
+					<p class="dev__text">Need some new functionality, or changes? Just ask for it!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="projects" id="projects">
+		<div class="tabs">
+			<div class="tabs__item">
+				<a href="#" class="tabs__link" id="front">Front-end</a>
+				<p class="tabs__description">Websites layout and JS animation</p>
+			</div>
+			
+			<div class="tabs__item">
+				<a href="#" class="tabs__link" id="back">Back-end</a>
+				<p class="tabs__description">Server functionality with light front-end</p>	
+			</div>
+			
+			<div class="tabs__item">
+				<a href="#" class="tabs__link" id="games">Game remakes</a>
+				<p class="tabs__description">A real programmer always has some classical game remakes</p>
+			</div>
+		</div>
+
+		<div class="projects__list projects__list_hidden" id="front">
+			<div class="projects__item">
+				<img src="index/img/" alt="" class="preview">
+				<h3 class="projects__title"></h3>
+				<p class="projects__description"></p>
+			</div>
+
+			<div class="projects__item">
+				<img src="index/img/" alt="" class="preview">
+				<h3 class="projects__title"></h3>
+				<p class="projects__description"></p>
+			</div>
+
+			<div class="projects__item">
+				<img src="index/img/" alt="" class="preview">
+				<h3 class="projects__title"></h3>
+				<p class="projects__description"></p>
+			</div>
+		</div>
+
+		<div class="projects__list projects__list_hidden" id="back">
+			<div class="projects__item">
+				<img src="index/img/" alt="" class="preview">
+				<h3 class="projects__title"></h3>
+				<p class="projects__description"></p>
+			</div>
+
+			<div class="projects__item">
+				<img src="index/img/" alt="" class="preview">
+				<h3 class="projects__title"></h3>
+				<p class="projects__description"></p>
+			</div>
+
+			<div class="projects__item">
+				<img src="index/img/" alt="" class="preview">
+				<h3 class="projects__title"></h3>
+				<p class="projects__description"></p>
+			</div>
+		</div>
+
+		<div class="projects__list projects__list_hidden" id="games">
+			<div class="projects__item">
+				<img src="index/img/" alt="" class="preview">
+				<h3 class="projects__title"></h3>
+				<p class="projects__description"></p>
+			</div>
+
+			<div class="projects__item">
+				<img src="index/img/" alt="" class="preview">
+				<h3 class="projects__title"></h3>
+				<p class="projects__description"></p>
+			</div>
+
+			<div class="projects__item">
+				<img src="index/img/" alt="" class="preview">
+				<h3 class="projects__title"></h3>
+				<p class="projects__description"></p>
+			</div>
+		</div>
+	</div>
+
+	<div class="contacts" id="contacts">
+		<h2 class="contacts__title">Find me on:</h2>
+		
+		<div class="contact__block">
+			<h3 class="contact__title">Telegram</h3>
+			<img src="" alt="" class="contact__img">
+			<p class="contact__text-link">@istomindr</p>
+		</div>
+
+		<div class="contact__block">
+			<h3 class="contact__title">Mail</h3>
+			<img src="" alt="" class="contact__img">
+			<p class="contact__text-link">riisa.toro@gmail.com</p>
+		</div>
+	</div>
+
 </body>
 </html>

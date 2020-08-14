@@ -1,0 +1,33 @@
+* {
+	font-size: 14pt;
+	font-family: 'Baloo Tamma 2', cursive;
+}
+
+/* ABOUT BLOCK */
+.about__header {
+	width: 50%;
+}
+
+.about__text {
+	font-size: 3em;
+}
+
+.about__text-break_wide {
+	font-size: 1.4em;
+	letter-spacing: 10px;
+}
+
+.about__image {
+	width: 960px;
+	height: 540px;
+}
+
+.stack__list {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.stack__text {
+	font-size: 1em;
+
+}
