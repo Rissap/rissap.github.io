@@ -2,46 +2,47 @@
 <html>
 <head>
 	<title>Homepage</title>
-	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="css/default.css">
+	
+	<link rel='stylesheet' href='css/index/index.css' />
+
 	<link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap" rel="stylesheet">
 </head>
 
 <body>
 	<div class="header" id="header">
 		<div class="header__logo">
-			<h2 class="header__name">Daniil Istomin</h2>
+			<h1 class="header__name">Daniil Istomin</h1>
+
+			<div class="header__menu">
+				<div class="header__btn-burger"></div>
+			</div>
 		</div>
-		<div class="header_navigation">
-			<div class="header__item">
-				<a href="#about" class="header__link">About</a>
-			</div>
-			<div class="header__item">
-				<a href="#stack" class="header__link">Tech Skills</a>
-			</div>
-			<div class="header__item">
-				<a href="#projects" class="header__link">Projects</a>
-			</div>
-			<div class="header__item">
-				<a href="#contacts" class="header__link">Contacts</a>
-			</div>
-			<div class="header__item">
-				<a href="https://github.com/Rissap/" class="header__link">Git</a>
-			</div>
+
+		<div class="header__navigation header__navigation_hidden">
+				<div class="header__item">
+					<a href="#about" class="header__link">About</a>
+				</div>
+				<div class="header__item">
+					<a href="#stack" class="header__link">Tech Skills</a>
+				</div>
+				<div class="header__item">
+					<a href="#projects" class="header__link">Projects</a>
+				</div>
+				<div class="header__item">
+					<a href="#contacts" class="header__link">Contacts</a>
+				</div>
+				<div class="header__item">
+					<a href="https://github.com/Rissap/" class="header__link">Git</a>
+				</div>
 		</div>
 	</div>
 
 	<div class="about" id="about">
 		<div class="about__header">
-			<h1 class="about__text">
-				Back-end
-				<br>
-				Front-end
-				<br> 
-				<span class="about__text-break about__text-break_wide">developer</span>
-			</h1>
-		</div>
-		<div class="about__media">
-			<img class="about__image" src="index/img/02.png">
+			<h2 class="about__text">Back-end</h2>
+			<h2 class="about__text">Front-end</h2>
+			<h2 class="about__text about__text_wide">developer</h2>
 		</div>
 	</div>
 
@@ -236,6 +237,7 @@
 			This is a personal website. All project rights belong to me or my customers. Please, don't refer to them without any permission.
 		</h6>
 	</div>
-	
+
+	<script type="text/javascript" src="js/button-burger.js"></script>
 </body>
 </html>

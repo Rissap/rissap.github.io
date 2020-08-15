@@ -1,0 +1,68 @@
+* {
+	font-size: 14pt;
+	font-family: 'Baloo Tamma 2', cursive;
+	background-color: #1F114D;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* BUTTON BURGER MENU */
+
+.header__menu {
+	margin-top: 20px;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.header__menu_hidden {
+	display: none;
+}
+
+.header__navigation_hidden {
+	display: none;
+}
+
+.header__btn-burger {
+	width: 40px;
+	height: 4px;
+	background: white;
+	border-radius: 5px;
+	transition: all .3s ease-in-out;
+}
+
+.header__btn-burger::before,
+.header__btn-burger::after {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 40px;
+	height: 4px;
+	background: white;
+	border-radius: 5px;
+	transition: all .5s ease-in-out;
+}
+
+.header__btn-burger::before {
+	transform: translateY(-15px);
+}
+
+.header__btn-burger::after {
+	transform: translateY(15px);
+}
+
+/* ANIMATION */
+.header__btn-burger_open {
+	background: transparent;
+}
+
+.header__btn-burger_open::before {
+	transform: rotate(45deg);
+}
+
+.header__btn-burger_open::after {
+	transform: rotate(-45deg);
+}
