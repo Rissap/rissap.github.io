@@ -58,25 +58,24 @@ body {
 
 
 	.tabs__wrapper {
-		width: 90%;
-		margin: 0px auto;
 		display: grid;
-		grid-template-columns: 32% 32% 32%;
-		text-align: center;
+		grid-template-columns: 1fr 1fr 1fr;
 	}
 
 	.tabs__item {
+		margin: 0 auto;
 		width: 90%;
 		height: 25px;
 		background-color: #AA8239;
 		position: relative;
 		bottom: 20px;
-		left: 10px;
 		padding-top: 13px;
 		border-radius: 5px;
+		text-align: center;
 	}
 
 	.tabs__link {
+		display: block;
 		color: white;
 		text-decoration: none;
 		display: block;
@@ -114,6 +113,22 @@ body {
 		font-weight: bold;
 
 	}
+
+	.projects__block {
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	.projects__img {
+		width: 80%;
+		border-radius: 5px;
+	}
+
+	.projects__title {
+		font-family: 'Suez One', serif;
+		margin: 10px 0;
+	}
+
 
 	.tabs__wrapper-1 {
 		background-color: #0D4F48;
