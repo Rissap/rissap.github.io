@@ -148,6 +148,7 @@ body {
 	.tabs__front,
 	.tabs__back,
 	.tabs__games {
+		cursor: pointer;
 		width: 90%;
 		margin: 0 auto;
 		height: 20px;
