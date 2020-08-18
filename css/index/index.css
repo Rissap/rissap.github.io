@@ -22,6 +22,9 @@ body {
 
 	.about__header {
 		text-align: center;
+
+		padding-top: 20px;
+
 	}
 
 	.about__text {
@@ -107,11 +110,10 @@ body {
 
 
 	.projects__main-header {
+		font-family: 'Suez One', serif;
 		text-align: center;
 		margin: 25px 0 0;
 		padding-top: 10px;
-		font-weight: bold;
-
 	}
 
 	.projects__block {
@@ -135,10 +137,11 @@ body {
 	}
 
 	.tabs__wrapper-2 {
-		width: 90%;
-		margin: 0px auto 50px;
+		width: 100%;
+		height: 37px;
+		margin-bottom: 50px;
 		display: grid;
-		grid-template-columns: 32% 32% 32%;
+		grid-template-columns: 1fr 1fr 1fr;
 		text-align: center;
 	}
 
@@ -146,15 +149,22 @@ body {
 	.tabs__back,
 	.tabs__games {
 		width: 90%;
+		margin: 0 auto;
 		height: 20px;
 		background-color: #AA8239;
 		position: relative;
 		top: 20px;
-		left: 10px;
 		padding-top: 10px;
 		border-radius: 5px;
 		font-size: 0.9em;
 		color: white;
+	}
+
+	.projects__block {
+		border: 1px dashed #0D4F48;
+		border-radius: 5px;
+		width: 90%;
+		margin: 20px auto;
 	}
 
 	.projects__main-header {
@@ -167,10 +177,9 @@ body {
 	}
 
 
-
 	.contacts__title {
 		text-align: center;
-		margin-bottom: 10px;
+		margin: 20px 0; 
 		font-weight: bold;
 	}
 
@@ -192,214 +201,69 @@ body {
 }
 
 @media only screen and (min-width: 576px) {
-
-}
-
-
-@media only screen and (min-width: 600px) {
-
+	.contact__wrapper {
+		grid-template-columns: 1fr 1fr;
+	}
 }
 
 
 @media only screen and (min-width: 768px) {
+	.skills__wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
 
+	.tabs__front,
+	.tabs__back,
+	.tabs__games {
+		width: 70%;
+	}
+
+	.projects__wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
 }
 
 
 @media only screen and (min-width: 992px) {
+	.about__text {
+		font-size: 2em;
+	}
+
+	.tech__greeting {
+		font-size: 1.6em;
+	}
 
 }
 
 
 @media only screen and (min-width: 1200px) {
-
-}
-
-
-
-
-/*
-.header__logo {
-		padding-top: 20px;
-		text-align: center;
-	}
-
-	.header__name,
-	.projects__header,
-	.tech__header {
-		text-align: center;
-		font-size: 4em;
-		color: #FFC777;
-		margin-top: 50px;
-	}
-
-	.header__menu {
-		float: right;
-		position: relative;
-		bottom: 110px;
-		right: 100px;
-	}
-
-	.header__navigation {
-		display: grid;
-		grid-template-columns: 1fr;
-		width: 100%;
-		text-align: center;
-		margin-bottom: 20px;
-	}
-
-	.header__link {
-		display: block;
-		text-decoration: none;
-		color: #6D92A0;
-		font-size: 2.5em;
-		width: 100%;
-		padding: 10px 0px;
-		background-color: #4B40D7;
-	}
-
-	.header__menu_hidden {
-		display: none;
-	}
-
-	.header__navigation_hidden {
-		display: none;
-	}
-
-
-
-	.about__header {
-		width: 100%;
-		background-image: url('../../img/index/dev.jpg');
-		background-repeat: no-repeat;
-		background-size: 100% 100%;
-	}
-
-	.about__text {
-		font-size: 6em;
-		color: white;
-		padding: 0px 50px;
-		background-color: unset;
-		text-shadow: 2px 2px 5px black; 
-	}
-
-	.about__text_wide {
-		color: #FF9500;
-		letter-spacing: 0.4em;
-	}
-
-
-
-	.stack__grid {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		width: 95%;
-		margin: 0px auto;
-		
-	}
-
-	.stack__title {
-		text-align: center;
-		color: #FF9500;
-		font-size: 2em;
-	}
-
-
-
-	.dev__wrapper {
-		padding: 0px 50px 50px 50px;
-	}
-
-	.dev__title {
-		color: #FF9500;
-	}
-
-	.dev__text {
-		color: white;
-		text-align: justify;
-	}
-
-
-
-	.tabs__wrapper {
-		width: 95%;
-		margin: 0px auto;
-		display: flex;
-		justify-content: center;
-	}
-
 	.tabs__item {
-
+		width: 70%;
 	}
 
-	.tabs__link {
-		cursor: pointer;
-		color: #FF9500;
-		font-size: 3em;
-		text-align: center;
-		text-decoration: none;
-		margin: 15px;
-		border-bottom: 2px solid #FF9500;
+	.skills__wrapper {
+		grid-template-columns: 1fr 1fr 1fr;
 	}
 
-	.tabs__description {
-		color: white;
+	.tabs__wrapper-2 {
+		height: 50px;
 	}
 
-
-	.projects__item {
-		width: 80%;
-		margin: 50px auto 0px;
-		text-align: center;
+	.tabs__front,
+	.tabs__back,
+	.tabs__games {
+		width: 50%;
+		padding-top: 20px;
+		height: 30px;
 	}
 
-	.projects__preview {
-		width: 450px;
-		height: 450px;
-	}
-
-	.projects__title, 
-	.projects__description {
-		color: white;
-	}
-
-	.projects__list_hidden {
-		display: none;
-	}
-
-
-
-	.contact__block  {
-		text-align: center;
-		margin-bottom: 30px;
-	}
-
-	.contacts__title {
-		margin-top: 50px;
-		color: #FF9500;
-		font-size: 2em;
-		text-align: center;
-	}
-
-	.contact__title {
-		color: white;
-	}
-
-	.contact__link {
-		color: #FF9500;
-		text-decoration: none;
-	}
-
-	.footer__text {
-		width: 80%;
-		font-size: 0.6em;
-		color: #8179E1;
-		text-align: center;
-		margin: 50px auto 10px;
+	.projects__wrapper {
+		grid-template-columns: 1fr 1fr 1fr;
 	}
 
 	.contact__wrapper {
-		display: grid;
-		grid-template-columns: 1fr;
+		grid-template-columns: 1fr 1fr 1fr;	
 	}
-*/
+}
